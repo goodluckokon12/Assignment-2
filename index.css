@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --CL-Green: rgb(46, 196, 182, 0.04);
+}
+.main {
+  display: flex;
+}
+body {
+  position: relative;
+  background: var(--CL-Green);
+  /* opacity: 0.4; */
+  line-height: 1.5rem;
+  padding: 80px;
+}
+img {
+  height: 50px;
+  width: 50px;
+  margin-left: -5px;
+}
+.section1 {
+  width: 50%;
+  
+  
+  padding-top: 200px;
+  padding: 20px;
+  /* padding-left: 50px; */
+  margin: auto auto;
+  /* padding: 40px 50px; */
+}
+.section2 {
+  width: 50%;
+
+  padding: 20px;
+  margin: auto auto;
+  /* padding: 40px 50px; */
+  background-color: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+}
+form div, input, select, button{
+  padding: 8px 15px;
+}
+form .d1,
+.d2,
+.d3,
+.d4,
+.d5,
+.d6 {
+  width: 50%;
+  float: left;
+}
+form .d7,
+.d8,
+button,
+input,
+select {
+  width: 100%;
+}
+button {
+  background-color: rgb(46, 196, 182);
+}
+button,
+input,
+select {
+  border: 0.1px solid #f0f0f0;
+}
+
+@media screen and (max-width: 650px) {
+  .main{
+    flex-direction: column;
+  }
+ .section1, .section2 {
+  width: 100%;
+  min-width: 400px;
+ }
+ body {
+  padding: 20px 20px;
+ }
+}
+
+@media screen and (max-width: 900px) {
+  form .d1,
+  .d2,
+  .d3,
+  .d4,
+  .d5,
+  .d6 {
+    width: 100%;
+  }
+}
+input[attribute="placeholder"]{
+  color: gray;
+}
+select {
+  color: gray;
+}
+.lmessage{
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
+}
+a{
+  padding: 0 3px;
+}
